@@ -13,7 +13,7 @@ public class SimonSays : MonoBehaviour
 
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI playerText;
-    private bool isShowingSequence = false;
+    //private bool isShowingSequence = false;
     private bool waitingForPlayer = false;
     public float difficultyAdder = 1.5f;
     public float animationLimit;
@@ -29,7 +29,7 @@ public class SimonSays : MonoBehaviour
     private IEnumerator ShowNextSequence()
     {
         waitingForPlayer = false;
-        isShowingSequence = true;
+        //isShowingSequence = true;
         playerText.text = "Espera*";
 
         int nextInSequence = Random.Range(0, buttons.Count);
@@ -43,7 +43,7 @@ public class SimonSays : MonoBehaviour
         }
 
         playerText.text = "Tu Turno!";
-        isShowingSequence = false;
+        //isShowingSequence = false;
         waitingForPlayer = true;
     }
 

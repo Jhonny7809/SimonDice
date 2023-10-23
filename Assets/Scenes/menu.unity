@@ -1836,7 +1836,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1496326614
 Transform:
   m_ObjectHideFlags: 0
@@ -1860,7 +1860,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496326613}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 8cc1e04f23fe8c0418c7a20d5efb26ea, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 8c46c20cd03b8cd41a91654126196cbc, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}

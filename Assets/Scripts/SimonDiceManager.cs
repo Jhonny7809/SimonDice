@@ -10,7 +10,7 @@ public class SimonDiceManager : MonoBehaviour
 
     public Image buttonImage; // El objeto de la interfaz que muestra el botón.
 
-    private int currentIndex = 0;
+    //private int currentIndex = 0;
 
     private void Start()
     {
