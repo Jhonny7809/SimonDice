@@ -33,4 +33,6 @@ public class Button : MonoBehaviour
         manager.FigurePressed(id);
 
     }
+
+
 }

@@ -5,8 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Pornombre : MonoBehaviour
 {
-    public void LoadScene(string sceneName) 
+    public void Retryxd() 
     { 
-      SceneManager.LoadScene(sceneName);
+      SceneManager.LoadScene("SimonTest");
+    }
+    public void Menuxd()
+    {
+        SceneManager.LoadScene("menu");
     }
 }

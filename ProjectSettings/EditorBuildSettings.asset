@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/perder.unity
     guid: 38fe977ae6160f348af8096853b18391
+  - enabled: 1
+    path: Assets/Scenes/SimonTest.unity
+    guid: 90cf8b7f9a4f6c34c8ebce8a9cb5ccef
   m_configObjects: {}

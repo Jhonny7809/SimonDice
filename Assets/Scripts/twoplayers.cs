@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Manager : MonoBehaviour
+public class twoplayers : MonoBehaviour
 {
     public SpriteRenderer[] figures;
     public SpriteRenderer[] figCirc;
@@ -37,7 +37,7 @@ public class Manager : MonoBehaviour
     private void Start()
     {
         vidas = 3;
-        StartGame();  
+        StartGame();
     }
 
     private void Update()
@@ -50,7 +50,7 @@ public class Manager : MonoBehaviour
             {
                 figures[sequence[sequencePosition]].color = Color.gray;
                 lit = false;
-                
+
                 dark = true;
                 waitCounter = waitLight;
 
@@ -62,7 +62,7 @@ public class Manager : MonoBehaviour
         {
             waitCounter -= Time.deltaTime;
 
-            if(sequencePosition >= sequence.Count)
+            if (sequencePosition >= sequence.Count)
             {
                 dark = false;
                 gameActive = true;
@@ -96,7 +96,7 @@ public class Manager : MonoBehaviour
         stayLitCounter = stayLit;
         lit = true;
 
-        
+
         score = 0;
         scoretxt.text = score.ToString();
 
@@ -105,7 +105,7 @@ public class Manager : MonoBehaviour
 
     public void FigurePressed(int id)
     {
-        if(gameActive)
+        if (gameActive)
         {
             if (sequence[inputSequence] == id)
             {
@@ -120,7 +120,7 @@ public class Manager : MonoBehaviour
                     score++;
                     scoretxt.text = score.ToString();
                     Invoke("nextsecuence", 1f);
-                   
+
                 }
             }
             else
@@ -130,7 +130,7 @@ public class Manager : MonoBehaviour
                 vidas--;
                 switch (vidas)
                 {
-                    case 3:                        
+                    case 3:
                         break;
                     case 2:
                         vidasxd[2].SetActive(false);
