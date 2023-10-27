@@ -7,7 +7,7 @@ public class SimonMangment : MonoBehaviour
 {
     [SerializeField] public List<int> secuencia = new List<int>();
     public GameObject[] butons;
-    int index=1;
+    //int index=1;
     int wBut;
     // Start is called before the first frame update
     void Start()
