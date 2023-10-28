@@ -140,7 +140,8 @@ public class Manager : MonoBehaviour
                     case 3:                        
                         break;
                     case 2:
-                        vidasxd[2].SetActive(false);
+                        //vidasxd[2].SetActive(false);
+                        vidasxd[2].GetComponent<lifeanim>().StartCoroutine("VidaPerdida");
                         score = 0;
                         scoretxt.text = score.ToString();
                         scoreAnim.SetTrigger("1");
@@ -148,7 +149,8 @@ public class Manager : MonoBehaviour
                         //gameActive = true;
                         break;
                     case 1:
-                        vidasxd[1].SetActive(false);
+                        //vidasxd[1].SetActive(false);
+                        vidasxd[1].GetComponent<lifeanim>().StartCoroutine("VidaPerdida");
                         score = 0;
                         scoretxt.text = score.ToString();
                         scoreAnim.SetTrigger("1");
@@ -156,7 +158,8 @@ public class Manager : MonoBehaviour
                         //gameActive = true;
                         break;
                     case 0:
-                        vidasxd[0].SetActive(false);
+                        //vidasxd[0].SetActive(false);
+                        vidasxd[0].GetComponent<lifeanim>().StartCoroutine("VidaPerdida");
                         score = 0;
                         scoretxt.text = score.ToString();
                         scoreAnim.SetTrigger("1");
