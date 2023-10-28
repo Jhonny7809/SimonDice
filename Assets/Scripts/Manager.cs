@@ -34,6 +34,7 @@ public class Manager : MonoBehaviour
 
     public GameObject retry;
 
+    public Animator scoreAnim;
 
     private void Start()
     {
@@ -75,6 +76,7 @@ public class Manager : MonoBehaviour
                 figures[sequence[sequencePosition]].color = Color.white;
                 //aqui van las anuimaciones xd
                 figures[sequence[sequencePosition]].GetComponent<AudioSource>().Play();
+                figures[sequence[sequencePosition]].GetComponent<Animator>().SetTrigger("1");
                 stayLitCounter = stayLit;
                 lit = true;
                 dark = false;
@@ -95,6 +97,7 @@ public class Manager : MonoBehaviour
 
         figures[sequence[sequencePosition]].color = Color.white;
         figures[sequence[sequencePosition]].GetComponent<AudioSource>().Play();
+        figures[sequence[sequencePosition]].GetComponent<Animator>().SetTrigger("1");
         //aqui van las animaciones xd
         stayLitCounter = stayLit;
         lit = true;
@@ -122,6 +125,7 @@ public class Manager : MonoBehaviour
                     gameActive = false;
                     score++;
                     scoretxt.text = score.ToString();
+                    scoreAnim.SetTrigger("2");
                     Invoke("nextsecuence", 1f);
                    
                 }
@@ -137,16 +141,25 @@ public class Manager : MonoBehaviour
                         break;
                     case 2:
                         vidasxd[2].SetActive(false);
+                        score = 0;
+                        scoretxt.text = score.ToString();
+                        scoreAnim.SetTrigger("1");
                         Invoke("StartGame", 1.5f);
                         //gameActive = true;
                         break;
                     case 1:
                         vidasxd[1].SetActive(false);
+                        score = 0;
+                        scoretxt.text = score.ToString();
+                        scoreAnim.SetTrigger("1");
                         Invoke("StartGame", 1.5f);
                         //gameActive = true;
                         break;
                     case 0:
                         vidasxd[0].SetActive(false);
+                        score = 0;
+                        scoretxt.text = score.ToString();
+                        scoreAnim.SetTrigger("1");
                         gameActive = false;
                         retry.SetActive(true);
                         break;
@@ -168,6 +181,7 @@ public class Manager : MonoBehaviour
 
         figures[sequence[sequencePosition]].color = Color.white;
         figures[sequence[sequencePosition]].GetComponent<AudioSource>().Play();
+        figures[sequence[sequencePosition]].GetComponent<Animator>().SetTrigger("1");
         //aqui van las anuimaciones xd
         stayLitCounter = stayLit;
         lit = true;

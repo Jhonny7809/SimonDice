@@ -26,7 +26,8 @@ public class Button : MonoBehaviour
         if (manager.gameActive)
         {
             sprite.color = Color.white;
-            gameObject.GetComponent<AudioSource>().Play();
+            gameObject.GetComponent<AudioSource>().PlayOneShot(gameObject.GetComponent<AudioSource>().clip);
+            gameObject.GetComponent<Animator>().SetTrigger("1");
         }
     }
 
