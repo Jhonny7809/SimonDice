@@ -23,14 +23,21 @@ public class Button : MonoBehaviour
 
     private void OnMouseDown()
     {
-        sprite.color = Color.white;
+        if (manager.gameActive)
+        {
+            sprite.color = Color.white;
+            gameObject.GetComponent<AudioSource>().Play();
+        }
     }
 
     private void OnMouseUp()
     {
-        sprite.color = Color.gray;
 
-        manager.FigurePressed(id);
+        if (manager.gameActive)
+        {
+            sprite.color = Color.gray;
+            manager.FigurePressed(id);
+        }
 
     }
 

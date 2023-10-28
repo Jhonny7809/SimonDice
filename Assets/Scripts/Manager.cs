@@ -22,7 +22,7 @@ public class Manager : MonoBehaviour
     public List<int> sequence;
     private int sequencePosition;
 
-    private bool gameActive = false;
+    public bool gameActive = false;
     private int inputSequence;
 
     //xd
@@ -33,6 +33,7 @@ public class Manager : MonoBehaviour
     public GameObject[] vidasxd;
 
     public GameObject retry;
+
 
     private void Start()
     {
@@ -70,9 +71,10 @@ public class Manager : MonoBehaviour
             else if (waitCounter < 0)
             {
                 figureSelect = Random.Range(0, figures.Length);
-
+                
                 figures[sequence[sequencePosition]].color = Color.white;
                 //aqui van las anuimaciones xd
+                figures[sequence[sequencePosition]].GetComponent<AudioSource>().Play();
                 stayLitCounter = stayLit;
                 lit = true;
                 dark = false;
@@ -92,6 +94,7 @@ public class Manager : MonoBehaviour
         sequence.Add(figureSelect);
 
         figures[sequence[sequencePosition]].color = Color.white;
+        figures[sequence[sequencePosition]].GetComponent<AudioSource>().Play();
         //aqui van las animaciones xd
         stayLitCounter = stayLit;
         lit = true;
@@ -164,6 +167,7 @@ public class Manager : MonoBehaviour
         sequence.Add(figureSelect);
 
         figures[sequence[sequencePosition]].color = Color.white;
+        figures[sequence[sequencePosition]].GetComponent<AudioSource>().Play();
         //aqui van las anuimaciones xd
         stayLitCounter = stayLit;
         lit = true;
