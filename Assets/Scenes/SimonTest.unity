@@ -816,6 +816,51 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &674800059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 674800060}
+  - component: {fileID: 674800061}
+  m_Layer: 0
+  m_Name: TimeOff
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &674800060
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674800059}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1427.9628, y: 651.01733, z: -2.2923102}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &674800061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674800059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a37cd6e9443eedd4984ccc439a2a1455, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gamexd: {fileID: 1401487438}
 --- !u!1 &700182651
 GameObject:
   m_ObjectHideFlags: 0
@@ -2186,7 +2231,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1401487438}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3733b616b9fc75444b8e70d639177328, type: 3}
   m_Name: 
@@ -2201,7 +2246,7 @@ MonoBehaviour:
   - {fileID: 370980103}
   - {fileID: 980627554}
   - {fileID: 823025337}
-  stayLit: 1
+  stayLit: 0.7
   waitLight: 0.2
   sequence: 
   gameActive: 0
@@ -3187,3 +3232,4 @@ SceneRoots:
   - {fileID: 1360593992}
   - {fileID: 1228159699}
   - {fileID: 1401487440}
+  - {fileID: 674800060}
